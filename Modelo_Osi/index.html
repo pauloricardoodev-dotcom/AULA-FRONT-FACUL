@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imgs/loguinho.png">
+    <title>Modelo_GostOsi</title>
+</head>
+<body>
+    <header>
+        <img src="imgs/LogoGostosi.png" alt="Logo">
+        <div class="links">
+            <a href="#starthere">Home</a>
+            <a href="#questions">Questionário</a>
+        </div>
+    </header>
+
+    <div class="first-content">
+        
+        <section class="osiModel">
+
+            <div class="layer" id="starthere">
+                <h1>Fisica</h1>
+                <div class="info">
+                    <h3>Camada Física</h3>
+                    <p>Responsável pela transmissão de bits através de sinais elétricos, ópticos ou ondas de rádio. Define cabos, conectores, voltagem, sincronização e taxa de transmissão.</p>
+                    <img src="imgs/camadaFisica.png">
+                </div>
+            </div>
+
+            <div class="layer">
+                <h1>Enlace</h1>
+                <div class="info">
+                    <h3>Camada de Enlace de Dados</h3>
+                    <p>Organiza os bits em quadros (frames), controla o acesso ao meio físico e realiza detecção de erros. Trabalha com endereçamento físico (MAC).</p>
+                    <img src="imgs/camadaEnlace.png">
+                </div>
+            </div>
+
+            <div class="layer">
+                <h1>Rede</h1>
+                <div class="info">
+                    <h3>Camada de Rede</h3>
+                    <p>Responsável pelo endereçamento lógico e roteamento de pacotes entre redes diferentes. Define o caminho que os dados percorrem utilizando protocolos como IP.</p>
+                    <img src="imgs/camadaRede.png">
+                </div>
+            </div>
+
+            <div class="layer">
+                <h1>Transporte</h1>
+                <div class="info">
+                    <h3>Camada de Transporte</h3>
+                    <p>Garante a entrega confiável dos dados, realizando segmentação, controle de fluxo e correção de erros. Utiliza protocolos como TCP e UDP.</p>
+                    <img src="imgs/camadaTransporte.png">
+                </div>
+            </div>
+
+            <div class="layer">
+                <h1>Sessão</h1>
+                <div class="info">
+                    <h3>Camada de Sessão</h3>
+                    <p>Estabelece, mantém e encerra sessões de comunicação entre aplicações, garantindo sincronização e controle de diálogo.</p>
+                    <img src="imgs/camadaSessao.png">
+                </div>
+            </div>
+
+            <div class="layer">
+                <h1>Apresentação</h1>
+                <div class="info">
+                    <h3>Camada de Apresentação</h3>
+                    <p>Responsável pela formatação dos dados, criptografia e compressão. Converte informações para que possam ser interpretadas corretamente pela aplicação.</p>
+                    <img src="imgs/camadaApresentacao.png">
+                </div>
+            </div>
+
+            <div class="layer">
+                <h1>Aplicação</h1>
+                <div class="info">
+                    <h3>Camada de Aplicação</h3>
+                    <p>Interface direta com o usuário e com softwares. Fornece serviços de rede como HTTP, FTP, SMTP e DNS.</p>
+                    <img src="imgs/camadaAplicacao.png">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="intro">
+            <h1>MODELO <span>OSI</span></h1>
+            <p>
+            O Modelo OSI (Open Systems Interconnection) é um modelo conceitual criado pela ISO para padronizar a comunicação entre sistemas de rede. Ele divide o processo de transmissão de dados em sete camadas independentes, cada uma com uma função específica. Essa organização facilita o desenvolvimento de protocolos, a interoperabilidade entre fabricantes e a identificação de falhas. Embora seja um modelo teórico, ele é amplamente utilizado como referência para compreender como a comunicação em redes de computadores funciona na prática.
+            </p>
+        </section>
+
+    </div>
+
+    <div class="divisor">
+        <img src="imgs/UniCesumar.png" alt="">
+    </div>
+
+    <div class="second-content">
+        <section class="cards">
+            <div class="card-info">
+                <h1>Camada Fisica</h1>
+                <p>Vamos entender mais a fundo a camada física do Modelo OSI.
+                    A camada física do modelo OSI, também chamada de layer 1 ou physical layer, trata da transmissão transparente de sequências de bits pelo meio físico, sendo a parte final da comunicação, ou seja, onde a transmissão pelo meio de comunicação realmente acontece.
+                    Na camada física do modelo OSI estão definidos os padrões mecânicos (conectores, painéis de conexão, cabos, etc…), funcionais (DCE ou DTE, por exemplo), elétricos (voltagens, codificação de linha, etc…) e procedimentos para acesso a esse meio físico.
+                    Nessa camada também temos as especificações dos meios de transmissão, como por exemplo: transmissão via satélite, cabo coaxial, radiotransmissão (rádios digitais ponto a ponto, Wifi, espalhamento espectral, etc.), par metálico (UTP e STP), fibra óptica (monomodo ou multimodo), etc…
+                </p>
+            </div>
+            <img src="imgs/camadaFisicaMais.png" alt="exemplo camada fisica">
+        </section>
+        <section class="cards">
+            <img src="imgs/camadaEnlaceMais.png" alt="exemplo camada enlace">
+            <div class="card-info">
+                <h1>Camada de Enlace de Dados</h1>
+                <p>
+                    A Camada de Enlace de Dados, também chamada de Layer 2, é responsável por garantir a comunicação confiável entre dois dispositivos diretamente conectados.
+                    Ela organiza os bits recebidos da camada física em unidades chamadas quadros (frames).
+                    
+                    Nessa camada ocorre o controle de acesso ao meio (MAC), a detecção e, em alguns casos, correção de erros.
+                    Também é aqui que trabalham os endereços MAC, que identificam fisicamente cada dispositivo em uma rede local.
+                    
+                    Dispositivos como switches operam nessa camada, encaminhando quadros com base nos endereços MAC.
+                </p>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card-info">
+                <h1>Camada de Rede</h1>
+                <p>
+                    A Camada de Rede, conhecida como Layer 3, é responsável pelo roteamento dos pacotes entre redes diferentes.
+                    Ela define o caminho que os dados irão percorrer da origem até o destino.
+
+                    O principal protocolo dessa camada é o IP (Internet Protocol), responsável pelo endereçamento lógico dos dispositivos.
+                    Roteadores operam nessa camada, analisando o endereço IP para decidir o melhor caminho para encaminhar os pacotes.
+
+                    Também pode realizar fragmentação de pacotes quando necessário.
+                </p>
+            </div>
+            <img src="imgs/camadaRedeMais.png" alt="exemplo camada rede">
+        </section>
+        <section class="cards">
+        <img src="imgs/camadaTransporteMais.png" alt="exemplo camada transporte">
+        <div class="card-info">
+            <h1>Camada de Transporte</h1>
+            <p>
+                A Camada de Transporte (Layer 4) é responsável por garantir a entrega dos dados de forma confiável ou rápida, dependendo do protocolo utilizado.
+                
+                Os principais protocolos são TCP (Transmission Control Protocol), que garante entrega confiável com controle de erro e confirmação, e UDP (User Datagram Protocol), que envia dados sem confirmação, priorizando velocidade.
+
+                Essa camada também realiza controle de fluxo e segmentação dos dados.
+            </p>
+        </div>
+        </section>
+        <section class="cards">
+            <div class="card-info">
+                <h1>Camada de Sessão</h1>
+                <p>
+                    A Camada de Sessão (Layer 5) é responsável por estabelecer, gerenciar e encerrar sessões de comunicação entre aplicações.
+                    
+                    Ela controla o diálogo entre os dispositivos, podendo definir quem transmite e por quanto tempo.
+                    Também pode incluir pontos de verificação (checkpoints), permitindo retomar transmissões interrompidas.
+
+                    Essa camada garante que a comunicação entre aplicações ocorra de maneira organizada.
+                </p>
+            </div>
+            <img src="imgs/camadaSessaoMais.png" alt="exemplo camada sessão">
+        </section>
+        <section class="cards">
+            <img src="imgs/camadaApresentacaoMais.png" alt="exemplo camada apresentação">
+            <div class="card-info">
+                <h1>Camada de Apresentação</h1>
+                <p>
+                    A Camada de Apresentação (Layer 6) é responsável por traduzir, criptografar e compactar os dados.
+                    
+                    Ela garante que a informação enviada pela aplicação de um sistema possa ser interpretada corretamente pela aplicação do sistema de destino.
+                    Atua na conversão de formatos (como ASCII, UTF-8), criptografia (como SSL/TLS) e compressão de dados.
+
+                    Pode ser considerada a "tradutora" do Modelo OSI.
+                </p>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card-info">
+                <h1>Camada de Aplicação</h1>
+                <p>
+                    A Camada de Aplicação (Layer 7) é a camada mais próxima do usuário final.
+                    Ela fornece serviços de rede diretamente para as aplicações.
+
+                    Protocolos como HTTP, HTTPS, FTP, SMTP e DNS operam nessa camada.
+                    É aqui que ocorrem as interações como acessar sites, enviar e-mails ou transferir arquivos.
+
+                    Essa camada não é a aplicação em si, mas sim os protocolos que permitem que a aplicação utilize a rede.
+                </p>
+            </div>
+            <img src="imgs/camadaAplicacaoMais.png" alt="exemplo camada aplicação">
+        </section>
+    </div>
+
+    <div class="qustionario" id="questions">
+        <h2>Questionário do Modelo OSI</h2>
+
+        <form class="quiz-grid">
+
+            <div class="question">
+                <p><strong>1- Quantas camadas possui o Modelo OSI?</strong></p>
+
+                <label class="option">
+                    <input type="radio" name="q1" value="5" required>
+                    <span>5</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q1" value="6">
+                    <span>6</span>
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="q1" value="7">
+                    <span>7</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q1" value="8">
+                    <span>8</span>
+                </label>
+            </div>
+
+
+            <div class="question">
+                <p><strong>2- Qual camada é responsável pelo roteamento?</strong></p>
+
+                <label class="option">
+                    <input type="radio" name="q2" required>
+                    <span>Física</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q2">
+                    <span>Enlace</span>
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="q2">
+                    <span>Rede</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q2">
+                    <span>Transporte</span>
+                </label>
+            </div>
+
+
+            <div class="question">
+                <p><strong>3- Qual protocolo pertence à Camada de Transporte?</strong></p>
+
+                <label class="option">
+                    <input type="radio" name="q3" required>
+                    <span>HTTP</span>
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="q3">
+                    <span>TCP</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q3">
+                    <span>DNS</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q3">
+                    <span>ARP</span>
+                </label>
+            </div>
+
+
+            <div class="question">
+                <p><strong>4- O endereço MAC pertence a qual camada?</strong></p>
+
+                <label class="option">
+                    <input type="radio" name="q4" required>
+                    <span>Física</span>
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="q4">
+                    <span>Enlace</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q4">
+                    <span>Rede</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q4">
+                    <span>Aplicação</span>
+                </label>
+            </div>
+
+
+            <div class="question">
+                <p><strong>5- Qual camada é responsável pela criptografia?</strong></p>
+
+                <label class="option">
+                    <input type="radio" name="q5" required>
+                    <span>Sessão</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q5">
+                    <span>Transporte</span>
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="q5">
+                    <span>Apresentação</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q5">
+                    <span>Aplicação</span>
+                </label>
+            </div>
+
+        <div class="question">
+                <p><strong>6- Qual dispositivo opera principalmente na Camada de Rede (Layer 3)?</strong></p>
+
+                <label class="option">
+                    <input type="radio" name="q6" required>
+                    <span>Switch</span>
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="q6">
+                    <span>Roteador</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q6">
+                    <span>Hub</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="q6">
+                    <span>Repetidor</span>
+                </label>
+            </div>
+
+        </form>
+</div>
+        
+    <footer>
+        <h1>não tive tempo de fazer o Rodpé =(</h1>
+    </footer>
+
+</body>
+</html>
