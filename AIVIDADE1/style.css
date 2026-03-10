@@ -1,0 +1,166 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to right, #000000, #313131);
+    color: aliceblue;
+    font-family: sans-serif;
+    margin: 90px 0 0 0;
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+article ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #6ac8ff;
+    border-radius: 15px;
+    width: 350px;
+    margin-left: 30%;
+    padding: 30px;
+}
+
+article li{
+    color: #000000;
+    font-weight: bold;
+    padding: 25px 20px;
+}
+
+h2{
+    color: #3b8abb;
+    font-size: 40px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: linear-gradient(to top, #00578a, #1fa1ec);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    list-style: none;
+    margin-right: 90px;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+a:hover{
+    font-size: 18px;
+    background-color: rgb(163, 233, 233);
+    color: #000000;
+}
+
+header{
+    padding: 150px 0 150px 0;
+    border: solid 5px #3b8abb;
+    margin-bottom: 100px;
+}
+
+header p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3b8abb;
+    font-size: 30px;
+}
+
+header h1{
+    margin-bottom: 90px;
+}
+
+main{
+    padding: 50px;
+}
+
+section{
+    background-image: linear-gradient(to left, #000000, #313131);
+    margin: 50px;
+    flex-direction: column;
+    box-shadow: 20px 20px 20px #f0f0f0c4;
+    padding: 50px;
+    transition: all 0.5s ease;
+}
+
+section:hover{
+    box-shadow: -20px 20px 20px #84f1ffc4;
+}
+
+section h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h3{
+    font-size: 20px;
+    color: #3b8abb;
+    text-align: center;
+}
+
+article p, summary, blockquote, code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span{
+    background-color: #6ac8ff;
+    color: #000000;
+}
+
+pre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    color: #000000;
+    padding: 40px 20px;
+    width: 35%;
+    margin-left: 31%;
+}
+
+table{
+    margin-left: 40%;
+}
+
+form fieldset{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+form select, input, textarea{
+    margin-bottom: 20px;
+    margin: 30px 270px;
+}
+
+label{
+    margin: 0 270px;
+}
