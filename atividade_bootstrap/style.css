@@ -1,0 +1,37 @@
+header{
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nav{
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link{
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.nav-link:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.form-control,
+.form-select,
+textarea {
+    background-color: #212529;
+    color: white;
+    border: 1px solid #495057;
+}
+
+.form-control::placeholder{
+    color: #adb5bd;
+}
