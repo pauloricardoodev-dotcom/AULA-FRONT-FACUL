@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    background-color: #000000;
+    background-image: url(./imgs/quarto.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    align-items: center;
+}
+
+.image-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content .programmer {
+    width: 700px;
+    z-index: 1;
+}
+
+button {
+    position: absolute;
+    top: 350px;
+    left: 800px;
+
+    height: 150px;
+    width: 260px;
+
+    background: linear-gradient(145deg, #272727, #4d4d4d);
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+
+    transition: all 0.2s ease;
+    z-index: 2;
+}
+
+button:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 
+        0 15px 25px rgba(0, 0, 0, 0.4),
+        inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(2px) scale(0.98);
+}
+
+.image-content .cafe {
+    width: 200px;
+    pointer-events: none;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+
+    background: radial-gradient(circle, rgba(255, 180, 50, 0.6), transparent 70%);
+    
+    z-index: -1;
+    filter: blur(15px);
+
+    animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+}
+
+.pulsando {
+    animation: pulse 0.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    50% {
+        transform: scale(1.08);
+        filter: brightness(1.4);
+    }
+    100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+}
+
+#alerta {
+    background-color: #000000b0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 62px;
+    text-align: center;
+    margin: 0px;
+
+    color: #facc15;
+    text-shadow: 
+        0 0 10px rgba(250, 204, 21, 0.8),
+        0 0 20px rgba(250, 204, 21, 0.6);
+
+    animation: glowText 2s ease-in-out infinite;
+}
+
+@keyframes glowText {
+    0% { text-shadow: 0 0 10px rgba(250, 204, 21, 0.6); }
+    50% { text-shadow: 0 0 25px rgba(250, 204, 21, 1); }
+    100% { text-shadow: 0 0 10px rgba(250, 204, 21, 0.6); }
+}
+
+#timer {
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    padding: 0;
+    width: 80%;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
