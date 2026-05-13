@@ -1,0 +1,39 @@
+        body {
+            font-family: sans-serif;
+            max-width: 360px;
+            margin: 80px auto;
+            padding: 0 16px;
+            color: #222;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            margin-bottom: 14px;
+        }
+
+        button {
+            padding: 8px 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 2;
+        }
