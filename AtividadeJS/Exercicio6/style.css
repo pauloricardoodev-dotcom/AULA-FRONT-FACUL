@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 16px;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+p.sub {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #bbb;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+select:focus,
+input:focus {
+    border-color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+#resultado {
+    margin-top: 24px;
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+    display: none;
+}
+
+#resultado h2 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.linha.total {
+    font-weight: bold;
+    font-size: 16px;
+    color: #111;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 4px;
+}
+
+.desconto-linha {
+    color: green;
+}
+
+.erro {
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+}

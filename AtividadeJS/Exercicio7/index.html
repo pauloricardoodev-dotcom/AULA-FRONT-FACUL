@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Infinity Bank - Card Guard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Infinity Bank</h1>
+  <p class="sub">Card Guard — Validador de Segurança</p>
+
+  <label for="numero">Número do Cartão</label>
+  <input type="text" id="numero" maxlength="19" placeholder="0000 0000 0000 0000">
+
+  <button onclick="analisar()">Analisar Cartão</button>
+
+  <div id="msg-erro" class="erro"></div>
+
+  <div id="painel">
+    <h2>Painel de Info</h2>
+    <div class="info-linha">
+      <span class="label">Status</span>
+      <span id="info-status"></span>
+    </div>
+    <div class="info-linha">
+      <span class="label">Bandeira</span>
+      <span id="info-bandeira"></span>
+    </div>
+    <div class="info-linha">
+      <span class="label">Categoria de Setor</span>
+      <span id="info-setor"></span>
+    </div>
+    <div class="info-linha">
+      <span class="label">Banco Emissor</span>
+      <span id="info-banco"></span>
+    </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
